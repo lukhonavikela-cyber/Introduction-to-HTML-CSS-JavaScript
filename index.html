@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vikela Ndzwayiba - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Vikela Ndzwayiba
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+            vikela@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+            +27627659877
+          </div>
+        </div>
+        <div class="topdiv">
+          <a href="#home"><img src="html_finalprojimages/home.png" class="icon" alt="home"/></a>
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image"/>
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Vikela Ndzwayiba! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving Hand"/>
+        </h1>
+        <p>
+          I am an IT Support Technician and Systems Specialist experienced in enterprise helpdesk operations, Active Directory infrastructure, and software deployment. I hold certifications in Microsoft Azure (AZ-900), Cisco Networking, and Generative AI for Software Engineering.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Active Directory"/>
+          <h6>Active Directory</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="Azure"/>
+          <h6>Azure Cloud</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/python.png" alt="Python"/>
+          <h6>Python</h6>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Project Details</h2>
+      <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Active Directory Infrastructure Deployment</h3>
+          <ul>
+            <li>Configured domain policies, user authentication profiles, and system access levels for enterprise client workstations.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Network Print Server & Systems Integration</h3>
+          <ul>
+            <li>Managed print spooler network setups and deployed automated driver configurations for multi-function Xerox and Canon devices.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Automated Systems Monitoring Setup</h3>
+          <ul>
+            <li>Implemented scripts for automated system diagnostics, network boot deployment, and hardware resource monitoring.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Vikela is an exceptional technical professional who resolves complex IT support issues with remarkable efficiency and precision.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working alongside Vikela on infrastructure tasks was a seamless experience. She consistently delivers well-engineered solutions.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Vikela demonstrates continuous initiative, deep technical discipline, and outstanding troubleshooting skills across desktop and network environments.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 9L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75V-4.875C0-.621.504-1.125 1.125-1.125H2.25C.621 0 1.125.504 1.125 1.125v21H4.125C.621 0 1.125-.504 1.125-1.125v9.75m8.25 21H8.25" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+      <h3>Thanks for leaving a Recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
